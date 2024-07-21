@@ -18,7 +18,7 @@ router.post('/send', async (req, res) => {
 
     await newMessage.save();
 
-    res.status(201).json({ success: true, message: 'Message sent successfully' });
+    res.status(201).json({ success: true, message: 'Message is sent successfully' });
   } catch (error) {
     console.error(error.message);
     res.status(500).json({ success: false, error: 'Internal Server Error' });
